@@ -1,0 +1,54 @@
+Utiliser GitHub avec Unity est une bonne pratique pour la gestion de versions et la collaboration sur des projets Unity. Voici les étapes de base pour commencer à utiliser GitHub avec Unity :
+
+1. **Créez un compte GitHub** :
+   - Si vous n'avez pas déjà un compte GitHub, rendez-vous sur [GitHub](https://github.com/) et inscrivez-vous gratuitement.
+
+2. **Installez Git** :
+   - Si Git n'est pas déjà installé sur votre ordinateur, téléchargez-le et installez-le à partir du site officiel de [Git](https://git-scm.com/).
+
+3. **Créez un dépôt (repository) sur GitHub** :
+   - Connectez-vous à votre compte GitHub.
+   - Cliquez sur le bouton "New" pour créer un nouveau dépôt.
+   - Donnez un nom à votre dépôt, choisissez la visibilité (public ou privé), et ajoutez une description si nécessaire. Cochez la case "Initialize this repository with a README" si vous souhaitez inclure un fichier README.
+   - Cliquez sur le bouton "Create repository" pour créer le dépôt.
+
+4. **Configurez Git sur votre ordinateur** :
+   - Ouvrez une invite de commandes ou un terminal.
+   - Configurez votre nom d'utilisateur et votre adresse e-mail avec les commandes suivantes en remplaçant "votre_nom" et "votre_email" par vos informations personnelles :
+     ```
+     git config --global user.name "votre_nom"
+     git config --global user.email "votre_email"
+     ```
+
+5. **Clonez le dépôt sur votre ordinateur** :
+   - Copiez l'URL de votre dépôt GitHub.
+   - Utilisez la commande `git clone` pour cloner le dépôt sur votre ordinateur. Par exemple :
+     ```
+     git clone https://github.com/votre_nom_utilisateur/votre_depot.git
+     ```
+
+6. **Ajoutez et gérez vos fichiers Unity** :
+   - Placez vos fichiers Unity (projet, scènes, scripts, etc.) dans le répertoire du dépôt cloné.
+
+7. **Ajoutez et validez les modifications** :
+   - Utilisez `git add` pour ajouter les fichiers que vous souhaitez valider.
+   - Utilisez `git commit` pour valider vos modifications localement avec un message descriptif.
+
+8. **Poussez les modifications vers GitHub** :
+   - Utilisez `git push` pour envoyer vos modifications vers GitHub.
+
+9. **Collaborez avec d'autres développeurs** :
+   - Vous pouvez inviter d'autres développeurs à collaborer sur votre dépôt en leur donnant accès en lecture ou en écriture.
+   - Utilisez des branches Git pour travailler sur des fonctionnalités ou des correctifs isolés.
+
+10. **Gérez les conflits** :
+    - Lorsque plusieurs développeurs modifient le même fichier en même temps, des conflits peuvent survenir. Utilisez des outils de résolution de conflits Git pour les gérer.
+
+11. **Mettez à jour votre dépôt local** :
+    - Utilisez `git pull` pour récupérer les dernières modifications depuis GitHub.
+
+12. **Consultez l'historique des commits** :
+    - Utilisez `git log` pour afficher l'historique des commits.
+
+Cela vous donne un aperçu de base de l'utilisation de GitHub avec Unity. Assurez-vous de consulter la documentation Git et GitHub pour en savoir plus sur les fonctionnalités avancées et les meilleures pratiques de gestion de versions.
+
