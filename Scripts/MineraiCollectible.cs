@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class MineraiCollectible : MonoBehaviour
@@ -6,11 +7,13 @@ public class MineraiCollectible : MonoBehaviour
     private float rayonDetection = 0.1f; // Rayon de détection autour du rocher
     private Inventory inventory;
     public Minerai minerai;
+    public GameObject mineraiGameObject;
 
     private void Start(){
 
         // Récupérer le script d'inventaire du joueur au démarrage pour ajouter les minerais
         GameObject inventaire = GameObject.FindGameObjectWithTag("Inventory");
+        mineraiGameObject = gameObject;
 
         if (inventaire != null){
             inventory = inventaire.GetComponent<Inventory>();
@@ -40,12 +43,14 @@ public class MineraiCollectible : MonoBehaviour
         if (!inventory.EstTropLourd(minerai)) {
             if (inventory.AjouterObjet(minerai)){
                 Debug.Log("minerai collecté !");
+                Destroy(mineraiGameObject);
             }
             else Debug.Log("PLus de place dans l'inventaire !");
         }
         else Debug.Log("minerai trop lourd !");
         
     }
+
 
     private void OnDrawGizmosSelected()
     {

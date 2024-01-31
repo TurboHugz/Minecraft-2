@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     public GameObject slotPrefab;
     public Transform parentSlots;
     public Canvas canvas;
+    
 
     private Item[,] inventory;
 
@@ -19,6 +20,7 @@ public class Inventory : MonoBehaviour
         inventory = new Item[nombreDeLignes,nombreDeColonnes];
         CreerSlotsUI();
         Debug.Log($"Dimensions de inventory : {inventory.GetLength(0)} x {inventory.GetLength(1)}");
+        
 
     }
 

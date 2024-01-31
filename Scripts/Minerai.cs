@@ -4,5 +4,5 @@
 public class Minerai : Item
 {
     public int quantiteMinerai;
-    
+
 }
