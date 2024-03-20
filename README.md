@@ -1,2 +1,2 @@
 # Minecraft-2
-On va tenter le projet la
+On va tenter le projet
